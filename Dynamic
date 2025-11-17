@@ -1,0 +1,32 @@
+class Vehicle 
+{ 
+void run() 
+{ 
+System.out.println("Vehicle is running ....."); 
+} 
+void speedlimit() 
+{ 
+System.out.println("Every Vehicle has speeed limit."); 
+} 
+} 
+class Bike extends Vehicle 
+{ 
+void run() 
+{ 
+System.out.println("Bike is running safely .... "); 
+} 
+void wheels() 
+{ 
+System.out.println("Bike has two wheels .... "); 
+} 
+} 
+class Dynamic 
+{ 
+public static void main(String args[]) 
+{ 
+Vehicle obj1=new Bike();//yes it is allowed 
+obj1.speedlimit(); 
+obj1.run(); 
+//obj1.wheels();//not allowed 
+} 
+}
